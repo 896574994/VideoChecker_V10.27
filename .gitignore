@@ -1,0 +1,32 @@
+# 编译产物
+dist/
+build_secure/
+release/
+release_secure/
+*.exe
+*.dll
+*.pdb
+
+# FFmpeg（体积大，不进仓库；见 vendor/ffmpeg/bin/README.md）
+vendor/ffmpeg/bin/*.exe
+ffmpeg/bin/*.exe
+
+# 运行数据（会含摄像头地址等隐私，绝不能提交）
+data/
+logs/
+reports/
+archive/
+settings.ini
+rtsp_streams.dat
+lock.dat
+live_alerts.csv
+cli_result.txt
+.theme
+.help_shown
+.pwd_prompted
+
+# 编辑器
+.vs/
+.idea/
+*.user
+*.suo
